@@ -12,8 +12,8 @@ const formElement = document.querySelector(".to-do__form");
 const inputElement = document.querySelector(".to-do__input");
 
 function loadTasks() {
-	const savedTasks = localStorage.getItem('tasks')
-	if(savedTasks){
+	const savedTasks = localStorage.getItem('tasks');
+	if (savedTasks){
 		return JSON.parse(savedTasks);
 	}
 	else {
